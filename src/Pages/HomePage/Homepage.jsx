@@ -11,7 +11,7 @@ export default function Home() {
         <p>Explanation</p>
       </div>
       <button type="button">
-        <Link to="/question">Next Page</Link>
+        <Link to="/question1">Start Quiz</Link>
       </button>
     </>
   );
