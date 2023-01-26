@@ -8,7 +8,7 @@ export default function Home({ color }) {
     <div className={HomeCss.main}>
       <div className={HomeCss.intro} style={{ backgroundColor: color }}>
         <div className={HomeCss.items}>
-          <h1>Welcome To This Simple Quize</h1>
+          <h1>Welcome To This Simple Quiz</h1>
           <h4>Here are the instructions to follow;</h4>
           <p>Explanation</p>
         </div>
