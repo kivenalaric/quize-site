@@ -6,14 +6,18 @@
   height: 100vh;
   gap: 10px;
   max-height: 100%;
+  background-color: #626262;
 }
 
 .intro {
   color: #adefd1ff;
+  background-color: #00203fff;
   margin: auto;
+  border-radius: 0px 30px;
   max-width: 80%;
   padding: 3%;
-  box-shadow: #414040 0px 5px 15px;
+  box-shadow: #414040 5px 20px 15px;
+  animation: bounce 3s 1;
 }
 
 .btn {
@@ -31,11 +35,36 @@
   border: none;
   border-radius: 5px;
   padding: 6px;
+  transition: 0.7s;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  background-color: #d8386d;
+  color: whitesmoke;
 }
 
 .button__link {
-    text-decoration: none;
-    color: #00203fff;
-    font-size: 20px;
-    font-weight: 700;
+  text-decoration: none;
+  color: #00203fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
 }
