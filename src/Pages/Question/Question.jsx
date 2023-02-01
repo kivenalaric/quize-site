@@ -73,7 +73,7 @@ export default function Question() {
                     <Link
                       className={QuestionCss.button__link}
                       to={
-                        pageNumber === 9
+                        pageNumber === 10
                           ? '/result'
                           : `/question1/${pageNumber + 1}`
                       }
