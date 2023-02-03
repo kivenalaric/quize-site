@@ -1,7 +1,5 @@
 import { createContext } from 'react';
 
-const myContext = createContext();
-const QuestionContextP = myContext.Provider;
-const QuestionContextC = myContext.Consumer;
+const QuestionContextP = createContext();
 
-export { QuestionContextP, QuestionContextC };
+export default QuestionContextP;

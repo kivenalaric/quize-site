@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable no-console */
@@ -8,7 +9,7 @@ import Home from './Pages/HomePage/Homepage';
 import Question from './Pages/Question/Question';
 import findQuestions from './api';
 import Result from './Pages/Result/Result';
-import { QuestionContextP } from './context';
+import QuestionContextP from './context';
 
 function App() {
   const [data, setData] = useState([]);
@@ -41,7 +42,7 @@ function App() {
   }, []);
 
   return (
-    <QuestionContextP
+    <QuestionContextP.Provider
       value={{
         checkAnswer,
         data,
@@ -56,7 +57,7 @@ function App() {
           <Route path="/result" element={<Result />} />
         </Routes>
       </BrowserRouter>
-    </QuestionContextP>
+    </QuestionContextP.Provider>
   );
 }
 
