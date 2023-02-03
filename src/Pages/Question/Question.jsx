@@ -43,7 +43,7 @@ export default function Question() {
                     onClick={(e) => {
                       disableBtn();
                       setText(() =>
-                        checkAnswer(e.target.textContent, pageNumber)
+                        checkAnswer(e.target.textContent, pageNumber - 1)
                       );
                     }}
                   >
@@ -56,7 +56,7 @@ export default function Question() {
                     onClick={(e) => {
                       disableBtn();
                       setText(() =>
-                        checkAnswer(e.target.textContent, pageNumber)
+                        checkAnswer(e.target.textContent, pageNumber - 1)
                       );
                     }}
                   >
@@ -80,7 +80,7 @@ export default function Question() {
                     >
                       <button
                         className={QuestionCss.next__btn}
-                        type="button"
+                        type="submit"
                         onClick={(e) => {
                           setDisable(false);
                           setText('');

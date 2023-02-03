@@ -6,7 +6,7 @@
   flex-direction: column;
   height: 100vh;
   max-height: 100%;
-  background-color: #430306;
+  background-color: #0a243d;
 }
 
 .question__heading {
@@ -22,9 +22,10 @@
   justify-content: center;
   border-radius: 10px;
   max-width: 80%;
+  border: #061c30 2px solid;
   margin: auto;
   width: 60%;
-  box-shadow: #414040 0px 5px 15px;
+  box-shadow: #1394f6 0px 5px 15px;
   padding: 3px 50px;
 }
 
